@@ -4,14 +4,16 @@ using Hain_Mvc_Movies.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Hain_Mvc_Movies.Migrations
 {
     [DbContext(typeof(Hain_Mvc_MoviesContext))]
-    partial class Hain_Mvc_MoviesContextModelSnapshot : ModelSnapshot
+    [Migration("20230123234130_rating")]
+    partial class rating
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
